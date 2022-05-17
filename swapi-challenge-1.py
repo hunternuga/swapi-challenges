@@ -19,6 +19,7 @@ if swapi_ships.status_code == 200:
             piloturl = pilots[x]
             print(" - " + str(get_pilot(piloturl)))
         else:
-            print(" - Alot of people!")
+            if (str(ships["pilots"])) == "[]":
+                print(" - A lot of people!")
 
 
